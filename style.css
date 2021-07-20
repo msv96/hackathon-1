@@ -36,3 +36,7 @@ body {
     text-align: center;
     grid-column: 1 / span 2;
 }
+.website {
+    color: yellow;
+    text-decoration: none;
+}

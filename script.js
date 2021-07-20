@@ -13,11 +13,16 @@ async function getData() {
         <div>Type</div>
         <div>${brewery.brewery_type}</div>
         <div>Address</div>
-        <div>${brewery.street}, ${brewery.city}, ${brewery.state} - ${brewery.postal_code}, ${brewery.country}</div>
+        <div>
+            ${brewery.street}, ${brewery.city}, 
+            ${brewery.state} - ${brewery.postal_code}, ${brewery.country}
+        </div>
         <div>Phone Number</div>
         <div>${brewery.phone}</div>
         <div>Website</div>
-        <a href="${brewery.website_url}" target="_blank">Click here</a>`;
+        <div>
+            <a href="${brewery.website_url}" target="_blank" class="website">Click here</a>
+        </div>`;
         userList.append(userContainer);
     });
     document.body.append(userList);
