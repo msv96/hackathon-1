@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans&family=Roboto&display=swap');
 
 body {
     background-color: ivory;
+    margin: 15px;
+}
+.headings {
+    font-family: Oswald;
+    font-size: 2.5em;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: hsl(270, 100%, 50%);
+    color: whitesmoke;
+    width: 600px;
 }
 .breweryList {
     display: flex;
@@ -15,7 +27,7 @@ body {
         #be29de, #ac2bdb, #9a2cd8, #882dd5, 
         #742ed1, #5e4de4, #4065f3, #0079ff, 
         #00a1ff, #00bbeb, #00cca5, #47d65a);
-    font-family: Noto Sans JP;
+    font-family: Noto Sans;
     font-size: 1.1em;
     color: whitesmoke;
     border-radius: 20px;
@@ -23,7 +35,7 @@ body {
     width: 380px;
     height: 300px;
     display: grid;
-    grid-template-columns: 140px 200px;
+    grid-template-columns: 140px 210px;
     justify-content: center;
 }
 .simpleCard:hover {
@@ -36,7 +48,7 @@ body {
     text-align: center;
     grid-column: 1 / span 2;
 }
-.website {
+.phone, .website {
     color: yellow;
     text-decoration: none;
 }

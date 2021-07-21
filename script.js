@@ -3,6 +3,10 @@ async function getData() {
         method: "GET"
     });
     const breweries = await data.json();
+    const userHead = document.createElement("div");
+    userHead.className = "headings";
+    userHead.innerText = "List of Breweries in U.S.A.";
+    document.body.append(userHead);
     const userList = document.createElement("div");
     userList.className = "breweryList";
     breweries.forEach((brewery) => {
@@ -13,15 +17,14 @@ async function getData() {
         <div>Type</div>
         <div>${brewery.brewery_type}</div>
         <div>Address</div>
-        <div>
-            ${brewery.street}, ${brewery.city}, 
-            ${brewery.state} - ${brewery.postal_code}, ${brewery.country}
-        </div>
+        <div>${brewery.street}, ${brewery.city}, ${brewery.state}, ${brewery.country}</div>
+        <div>Postal Code</div>
+        <div>${brewery.postal_code}</div>
         <div>Phone Number</div>
-        <div>${brewery.phone}</div>
+        <div><a href="tel:${brewery.phone}" class="phone">${brewery.phone}</a></div>
         <div>Website</div>
         <div>
-            <a href="${brewery.website_url}" target="_blank" class="website">Click here</a>
+        <a href="${brewery.website_url}" target="_blank" class="website">Click here</a>
         </div>`;
         userList.append(userContainer);
     });
