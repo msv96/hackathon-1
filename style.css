@@ -10,10 +10,10 @@ body {
     text-align: center;
     margin: auto;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: hsl(270, 100%, 50%);
     color: whitesmoke;
-    width: 380px;
+    width: 370px;
 }
 .breweryList {
     display: flex;
