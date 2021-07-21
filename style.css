@@ -17,7 +17,7 @@ body {
     border-radius: 10px;
     background-color: hsl(270, 100%, 50%);
     color: whitesmoke;
-    flex: 0 0 100%;
+    flex: 1 1 100%;
 }
 .simpleCard {
     background-image: linear-gradient(to right bottom, 
