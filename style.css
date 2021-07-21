@@ -4,23 +4,20 @@ body {
     background-color: ivory;
     margin: 15px;
 }
-.headings {
-    font-family: Oswald;
-    font-size: 2.3em;
-    text-align: center;
-    margin: auto;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: hsl(270, 100%, 50%);
-    color: whitesmoke;
-    width: 360px;
-}
 .breweryList {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    margin: 25px;
+}
+.headings {
+    font-family: Oswald;
+    font-size: 2.3em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: hsl(270, 100%, 50%);
+    color: whitesmoke;
+    flex: 0 0 100%;
 }
 .simpleCard {
     background-image: linear-gradient(to right bottom, 

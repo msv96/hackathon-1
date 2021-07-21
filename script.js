@@ -3,12 +3,12 @@ async function getData() {
         method: "GET"
     });
     const breweries = await data.json();
+    const userList = document.createElement("div");
+    userList.className = "breweryList";
     const userHead = document.createElement("div");
     userHead.className = "headings";
     userHead.innerText = "List of Breweries in U.S.A.";
-    document.body.append(userHead);
-    const userList = document.createElement("div");
-    userList.className = "breweryList";
+    userList.append(userHead);
     breweries.forEach((brewery) => {
         const userContainer = document.createElement("div");
         userContainer.className = "simpleCard";
