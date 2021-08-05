@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Noto+Sans&family=Roboto&display=swap');
+
+body {
+    background-color: ivory;
+    margin: 15px;
+}
+.headings {
+    font-family: Oswald;
+    font-size: 2.3em;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsl(270, 100%, 50%);
+    color: whitesmoke;
+    width: 370px;
+}
+.breweryList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+.simpleCard {
+    background-image: linear-gradient(to right bottom, 
+        #be29de, #ac2bdb, #9a2cd8, #882dd5, 
+        #742ed1, #5e4de4, #4065f3, #0079ff, 
+        #00a1ff, #00bbeb, #00cca5, #47d65a);
+    font-family: Noto Sans;
+    font-size: 1.1em;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 15px;
+    width: 380px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 140px 210px;
+    justify-content: center;
+}
+.simpleCard:hover {
+    transform: scale(1.07);
+}
+.brewName {
+    font-size: 1.8em;
+    font-family: Roboto;
+    font-weight: 700;
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+.phone, .website {
+    color: yellow;
+    text-decoration: none;
+}
